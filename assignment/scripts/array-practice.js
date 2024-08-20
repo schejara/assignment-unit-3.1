@@ -55,23 +55,18 @@ console.log('Second animal is ',secondAnimal);
 //      you have proof that it works!)
 
 // First solution:
-let lastAnimal = animalArray.length;
-console.log(animalArray);
-console.log('Last animal is ', animalArray[3]);
+let lastAnimal = animalArray[3];
+//console.log(animalArray);
+console.log('Last animal is ', lastAnimal);
 
 
-// Second solution
-lastAnimal = animalArray.length;
-console.log(animalArray);
-console.log('Last animal is ', animalArray[lastAnimal - 1]);
 
 // 3.c. (STRETCH) TODO: Refactor 3.b to use the `animalArray` variable's .length 
 //       property, rather than the exact (hardcoded) index number of the last item.
 
-lastAnimal = animalArray.length-1;
-console.log(lastAnimal);
-console.log('Last animal is ',animalArray[lastAnimal]);
 
+lastAnimal = animalArray[animalArray.length-1];
+console.log('Last animal is ', lastAnimal);
 
 // Adding & Removing Array Items
 console.log('--- 4. Adding and removing array items ---');
@@ -169,7 +164,7 @@ console.log('The sorted array now ',gems);
 //     🔥 You'll need to research the .join Array method. 🔥
 //     Don't forget to console.log `gemString`...
 
-let gemString = gems.join('  and  ');
+let gemString = gems.join(' and ');
 console.log('New separated array ',gemString);
 
 
